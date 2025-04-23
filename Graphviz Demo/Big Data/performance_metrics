@@ -1,0 +1,9 @@
+digraph PerformanceMetrics {
+	bgcolor=white rankdir=LR
+	Sales [label="Total Sales
+$4,608,450,130" fillcolor="#e6f3ff" shape=box]
+	Profit [label="Avg Profit/Bottle
+$5.47" fillcolor="#d4f7d4" shape=box]
+	AOV [label="Average Order Value
+$147.05" fillcolor="#ffe6e6" shape=box]
+}

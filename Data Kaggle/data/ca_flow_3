@@ -1,0 +1,40 @@
+digraph {
+	dpi=300 rankdir=LR size=16
+	Lead [label="Lead
+(358 leads)" fillcolor=deepskyblue shape=box style=filled]
+	Interest1 [label="Lead’s Interest" shape=diamond]
+	Awareness [label="Awareness (Demo Video)
+(194 leads)" fillcolor=deepskyblue shape=box style=filled]
+	Interest2 [label="Lead’s Interest" shape=diamond]
+	Consideration [label="Consideration
+(115 leads)" fillcolor=deepskyblue shape=box style=filled]
+	Interest3 [label="Lead’s Interest" shape=diamond]
+	Conversion [label="Conversion
+(64 leads)" fillcolor=deepskyblue shape=box style=filled]
+	Drop [label=Drop fillcolor=orangered shape=box style=filled]
+	Lead -> Interest1 [label="Introduction/Demo Call
+(Success Rate: 81.9%)"]
+	Interest1 -> Awareness [label=Yes]
+	Awareness -> Interest2 [label="Post Demo - Follow up Call"]
+	Interest2 -> Consideration [label=Yes]
+	Consideration -> Interest3 [label="Call for Conversion"]
+	Interest3 -> Conversion [label="Yes - Payment Successful"]
+	"Wants offline classes" [label="Wants offline classes (Awareness: 56, Consideration: 25, Conversion: 10)" shape=plaintext]
+	Interest1 -> "Wants offline classes" [style=dashed]
+	"Wants offline classes" -> Drop [style=dashed]
+	"Can't afford" [label="Can't afford (Awareness: 44, Consideration: 32, Conversion: 19)" shape=plaintext]
+	Interest1 -> "Can't afford" [style=dashed]
+	"Can't afford" -> Drop [style=dashed]
+	"Student not interested in domain" [label="Student not interested in domain (Awareness: 28, Consideration: 14, Conversion: 10)" shape=plaintext]
+	Interest1 -> "Student not interested in domain" [style=dashed]
+	"Student not interested in domain" -> Drop [style=dashed]
+	"No time for student" [label="No time for student (Awareness: 27, Consideration: 6, Conversion: 5)" shape=plaintext]
+	Interest1 -> "No time for student" [style=dashed]
+	"No time for student" -> Drop [style=dashed]
+	"Will join in final year" [label="Will join in final year (Awareness: 5, Consideration: 2, Conversion: 7)" shape=plaintext]
+	Interest1 -> "Will join in final year" [style=dashed]
+	"Will join in final year" -> Drop [style=dashed]
+	"Cannot afford" [label="Cannot afford (Awareness: 4)" shape=plaintext]
+	Interest1 -> "Cannot afford" [style=dashed]
+	"Cannot afford" -> Drop [style=dashed]
+}

@@ -1,0 +1,14 @@
+digraph CallInteractionSuccessFailure {
+	rankdir=LR
+	Lead [label=Lead fillcolor=lightblue shape=box style=filled]
+	Awareness [label=Awareness fillcolor=lightblue shape=box style=filled]
+	Consideration [label=Consideration fillcolor=lightblue shape=box style=filled]
+	Conversion [label=Conversion fillcolor=lightblue shape=box style=filled]
+	"Drop-off" [label="Drop-off" fillcolor=pink shape=diamond style=filled]
+	Lead -> Awareness [label="0 Successful" color=green]
+	Lead -> "Drop-off" [label="0 Failed" color=red]
+	Awareness -> Consideration [label="0 Successful" color=green]
+	Awareness -> "Drop-off" [label="0 Failed" color=red]
+	Consideration -> Conversion [label="0 Successful" color=green]
+	Consideration -> "Drop-off" [label="0 Failed" color=red]
+}

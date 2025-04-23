@@ -1,0 +1,91 @@
+digraph Customer_Acquisition_Flow {
+	compound=true rankdir=TB size="16,12"
+	node [fontname=Arial fontsize=10 shape=box style=rounded]
+	edge [fontname=Arial fontsize=9]
+	subgraph cluster_main_stages {
+		color=lightgrey fontsize=12 label="Customer Acquisition Key Stages (with actual counts)" style=filled
+		Lead [label="Lead
+Total: 360
+Sources: 5"]
+		Awareness [label="Awareness
+Demo Watched: 194
+({'English': 112, 'Telugu': 62, 'Hindi': 20})"]
+		Consideration [label="Consideration
+Follow-ups: 331"]
+		Conversion [label="Conversion
+Successful: 64
+Rate: 17.8%"]
+		Lead -> Awareness [label="250 (69.4%)"]
+		Awareness -> Consideration [label="331 (132.4%)"]
+		Consideration -> Conversion [label="64 (19.3%)"]
+	}
+	Dropout1 [label="Dropout
+110 leads
+(30.6%)" color=red shape=diamond]
+	Dropout2 [label="Dropout
+-81 leads
+(-32.4%)" color=red shape=diamond]
+	Dropout3 [label="Dropout
+267 leads
+(80.7%)" color=red shape=diamond]
+	Lead -> Dropout1 [style=dashed]
+	Awareness -> Dropout2 [style=dashed]
+	Consideration -> Dropout3 [style=dashed]
+	subgraph cluster_reasons {
+		color=lightyellow fontsize=12 label="Detailed Reasons for No Interest" rank=same style=filled
+		Demo_header [label=<<B>Demo</B>> fontsize=11 shape=plaintext]
+		"Demo_Wants offline classes" [label="Wants offline classes: 56 leads" color=lightcoral fontsize=9 shape=box style=filled]
+		Demo_header -> "Demo_Wants offline classes" [style=invis]
+		"Demo_Cannot afford" [label="Cannot afford: 48 leads" color=lightcoral fontsize=9 shape=box style=filled]
+		Demo_header -> "Demo_Cannot afford" [style=invis]
+		"Demo_Student not interested in domain" [label="Student not interested in domain: 28 leads" color=lightcoral fontsize=9 shape=box style=filled]
+		Demo_header -> "Demo_Student not interested in domain" [style=invis]
+		"Demo_No time for student" [label="No time for student: 27 leads" color=lightcoral fontsize=9 shape=box style=filled]
+		Demo_header -> "Demo_No time for student" [style=invis]
+		"Demo_Will join in final year" [label="Will join in final year: 5 leads" color=lightcoral fontsize=9 shape=box style=filled]
+		Demo_header -> "Demo_Will join in final year" [style=invis]
+		Consider_header [label=<<B>Consider</B>> fontsize=11 shape=plaintext]
+		"Consider_Can't afford" [label="Can't afford: 32 leads" color=lightcoral fontsize=9 shape=box style=filled]
+		Consider_header -> "Consider_Can't afford" [style=invis]
+		"Consider_Wants offline classes" [label="Wants offline classes: 25 leads" color=lightcoral fontsize=9 shape=box style=filled]
+		Consider_header -> "Consider_Wants offline classes" [style=invis]
+		"Consider_Student not interested in domain" [label="Student not interested in domain: 14 leads" color=lightcoral fontsize=9 shape=box style=filled]
+		Consider_header -> "Consider_Student not interested in domain" [style=invis]
+		"Consider_No time for student" [label="No time for student: 6 leads" color=lightcoral fontsize=9 shape=box style=filled]
+		Consider_header -> "Consider_No time for student" [style=invis]
+		"Consider_Will join in final year" [label="Will join in final year: 2 leads" color=lightcoral fontsize=9 shape=box style=filled]
+		Consider_header -> "Consider_Will join in final year" [style=invis]
+		Convert_header [label=<<B>Convert</B>> fontsize=11 shape=plaintext]
+		"Convert_Can't afford" [label="Can't afford: 19 leads" color=lightcoral fontsize=9 shape=box style=filled]
+		Convert_header -> "Convert_Can't afford" [style=invis]
+		"Convert_Student not interested in domain" [label="Student not interested in domain: 10 leads" color=lightcoral fontsize=9 shape=box style=filled]
+		Convert_header -> "Convert_Student not interested in domain" [style=invis]
+		"Convert_Wants offline classes" [label="Wants offline classes: 10 leads" color=lightcoral fontsize=9 shape=box style=filled]
+		Convert_header -> "Convert_Wants offline classes" [style=invis]
+		"Convert_Will join in final year" [label="Will join in final year: 7 leads" color=lightcoral fontsize=9 shape=box style=filled]
+		Convert_header -> "Convert_Will join in final year" [style=invis]
+		"Convert_No time for student" [label="No time for student: 5 leads" color=lightcoral fontsize=9 shape=box style=filled]
+		Convert_header -> "Convert_No time for student" [style=invis]
+		rank=same
+		Demo_header -> Consider_header [style=invis]
+		Consider_header -> Convert_header [style=invis]
+	}
+	subgraph cluster_call_flow {
+		color=lightblue fontsize=12 label="Common Call Interaction Patterns" style=filled
+		Start [label="Start Call"]
+		Intro [label="Introduction
+499 calls"]
+		Demo [label="Demo Scheduled
+0 calls"]
+		Followup [label="Follow-up
+0 calls"]
+		ConversionCall [label="Conversion Call
+64 calls"]
+		Start -> Intro
+		Intro -> Demo
+		Demo -> Followup
+		Followup -> ConversionCall
+	}
+	Lead -> Start [constraint=false lhead=cluster_call_flow]
+	ConversionCall -> Conversion [constraint=false ltail=cluster_call_flow]
+}

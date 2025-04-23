@@ -1,0 +1,24 @@
+digraph PerformanceDashboard {
+	bgcolor=white layout=neato rankdir=TB
+	subgraph cluster_main {
+		fillcolor="#f0f0f0" fontsize=16 label="Iowa Liquor Sales Performance" style=filled
+		subgraph cluster_row1 {
+			rank=same
+			TS [label="Total Sales
+$4,608,450,130" fillcolor="#e6f3ff" height=1.5 shape=box style=filled width=2]
+			TB [label="Total Bottles
+342,094,562" fillcolor="#e6f3ff" height=1.5 shape=box style=filled width=2]
+			TV [label="Total Volume
+286,337,301 L" fillcolor="#e6f3ff" height=1.5 shape=box style=filled width=2]
+		}
+		subgraph cluster_row2 {
+			rank=same
+			PPB [label="Profit/Bottle
+$5.47" fillcolor="#d4f7d4" height=1.5 shape=box style=filled width=2]
+			AOV [label="Avg Order Value
+$147.05" fillcolor="#d4f7d4" height=1.5 shape=box style=filled width=2]
+			AOF [label="Avg Order Freq
+9726.67/store" fillcolor="#d4f7d4" height=1.5 shape=box style=filled width=2]
+		}
+	}
+}

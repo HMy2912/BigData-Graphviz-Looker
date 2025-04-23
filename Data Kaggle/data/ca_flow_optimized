@@ -1,0 +1,42 @@
+digraph {
+	dpi=300 rankdir=LR size=16
+	Drop [label=Drop fillcolor=orangered shape=box style=filled]
+	Lead [label="Lead
+(358 leads)" fillcolor=deepskyblue shape=box style=filled]
+	Awareness [label="Awareness (Demo Video)
+(194 leads)" fillcolor=deepskyblue shape=box style=filled]
+	Consideration [label="Consideration
+(115 leads)" fillcolor=deepskyblue shape=box style=filled]
+	Conversion [label="Conversion
+(64 leads)" fillcolor=deepskyblue shape=box style=filled]
+	Interest1 [label="Lead’s Interest" shape=diamond]
+	Interest2 [label="Lead’s Interest" shape=diamond]
+	Interest3 [label="Lead’s Interest" shape=diamond]
+	Lead -> Interest1 [label="Introduction/Demo Call"]
+	Interest1 -> Awareness [label=Yes]
+	Awareness -> Interest2 [label="Post Demo - Follow up Call"]
+	Interest2 -> Consideration [label=Yes]
+	Consideration -> Interest3 [label="Call for Conversion"]
+	Interest3 -> Conversion [label="Yes - Payment Successful"]
+	Interest1 -> Drop [label="No (164 dropped)
+Wants offline classes (Awareness: 56 leads) (Consideration: 25 leads) (Conversion: 10 leads)
+Can't afford (Awareness: 44 leads) (Consideration: 32 leads) (Conversion: 19 leads)
+Student not interested in domain (Awareness: 28 leads) (Consideration: 14 leads) (Conversion: 10 leads)
+No time for student (Awareness: 27 leads) (Consideration: 6 leads) (Conversion: 5 leads)
+Will join in final year (Awareness: 5 leads) (Consideration: 2 leads) (Conversion: 7 leads)
+Cannot afford (Awareness: 4 leads)" style=dashed]
+	Interest2 -> Drop [label="No (79 dropped)
+Wants offline classes (Awareness: 56 leads) (Consideration: 25 leads) (Conversion: 10 leads)
+Can't afford (Awareness: 44 leads) (Consideration: 32 leads) (Conversion: 19 leads)
+Student not interested in domain (Awareness: 28 leads) (Consideration: 14 leads) (Conversion: 10 leads)
+No time for student (Awareness: 27 leads) (Consideration: 6 leads) (Conversion: 5 leads)
+Will join in final year (Awareness: 5 leads) (Consideration: 2 leads) (Conversion: 7 leads)
+Cannot afford (Awareness: 4 leads)" style=dashed]
+	Interest3 -> Drop [label="No (51 dropped)
+Wants offline classes (Awareness: 56 leads) (Consideration: 25 leads) (Conversion: 10 leads)
+Can't afford (Awareness: 44 leads) (Consideration: 32 leads) (Conversion: 19 leads)
+Student not interested in domain (Awareness: 28 leads) (Consideration: 14 leads) (Conversion: 10 leads)
+No time for student (Awareness: 27 leads) (Consideration: 6 leads) (Conversion: 5 leads)
+Will join in final year (Awareness: 5 leads) (Consideration: 2 leads) (Conversion: 7 leads)
+Cannot afford (Awareness: 4 leads)" style=dashed]
+}

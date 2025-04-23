@@ -1,0 +1,32 @@
+digraph {
+	dpi=300 rankdir=LR size=16
+	Lead [label="Lead
+(358 leads)
+Top Source: social_media" fillcolor=deepskyblue shape=box style=filled]
+	Awareness [label="Awareness (Demo Video)
+(194 leads)
+Demo Attendance: 100.0%
+Avg Watch: 56.6%
+Top Language: English" fillcolor=deepskyblue shape=box style=filled]
+	Consideration [label="Consideration
+(115 leads)
+Avg Cycles: 4.0" fillcolor=deepskyblue shape=box style=filled]
+	Conversion [label="Conversion
+(64 leads)" fillcolor=deepskyblue shape=box style=filled]
+	Drop [label=Drop fillcolor=orangered shape=box style=filled]
+	Interest1 [label="Lead’s Interest" shape=diamond]
+	Interest2 [label="Lead’s Interest" shape=diamond]
+	Interest3 [label="Lead’s Interest" shape=diamond]
+	Lead -> Interest1 [label="Introduction/Demo Call
+(Success Rate: 81.9%)"]
+	Interest1 -> Drop [label="No (164 dropped at demo stage)"]
+	Interest1 -> Awareness [label=Yes]
+	Awareness -> Interest2 [label="Post Demo Follow-up
+(Success Rate: 98.0%)"]
+	Interest2 -> Drop [label="No (79 dropped at consideration stage)"]
+	Interest2 -> Consideration [label=Yes]
+	Consideration -> Interest3 [label="Conversion Follow-up
+(Success Rate: 87.6%)"]
+	Interest3 -> Drop [label="No (51 dropped at conversion stage)"]
+	Interest3 -> Conversion [label="Yes - Payment Successful"]
+}

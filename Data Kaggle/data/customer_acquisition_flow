@@ -1,0 +1,50 @@
+digraph "Customer Acquisition Flow" {
+	rankdir=LR
+	Lead [label="Lead
+(358 leads)
+Conv. Rate: 54.2%
+Call Success: 81.9%
+Avg Time: 0.0 days" fillcolor=lightblue shape=box style=filled]
+	Awareness [label="Awareness
+(194 leads)
+Conv. Rate: 59.3%
+Call Success: 98.0%
+Avg Time: 0.0 days" fillcolor=lightblue shape=box style=filled]
+	Consideration [label="Consideration
+(115 leads)
+Conv. Rate: 55.7%
+Call Success: 87.6%
+Avg Time: 0.0 days" fillcolor=lightblue shape=box style=filled]
+	Conversion [label="Conversion
+(64 leads)
+Conv. Rate: 0.0%
+Call Success: 100.0%
+Avg Time: 0.0 days" fillcolor=lightblue shape=box style=filled]
+	Lead -> Awareness [label="54.2% Conversion"]
+	Awareness -> Consideration [label="59.3% Conversion"]
+	Consideration -> Conversion [label="55.7% Conversion"]
+	"Drop-off" [label="Drop-off
+(294 leads)" fillcolor=red shape=ellipse style=filled]
+	Consideration -> "Drop-off" [label="294 Drop-offs"]
+	"Drop-off: Can't afford" [label="Can't afford
+(95 leads)" fillcolor=orange shape=ellipse style=filled]
+	"Drop-off" -> "Drop-off":" Can't afford"
+	"Drop-off: Wants offline classes" [label="Wants offline classes
+(91 leads)" fillcolor=orange shape=ellipse style=filled]
+	"Drop-off" -> "Drop-off":" Wants offline classes"
+	"Drop-off: Student not interested in domain" [label="Student not interested in domain
+(52 leads)" fillcolor=orange shape=ellipse style=filled]
+	"Drop-off" -> "Drop-off":" Student not interested in domain"
+	"Drop-off: No time for student" [label="No time for student
+(38 leads)" fillcolor=orange shape=ellipse style=filled]
+	"Drop-off" -> "Drop-off":" No time for student"
+	"Drop-off: Will join in final year" [label="Will join in final year
+(14 leads)" fillcolor=orange shape=ellipse style=filled]
+	"Drop-off" -> "Drop-off":" Will join in final year"
+	"Drop-off: Cannot afford" [label="Cannot afford
+(4 leads)" fillcolor=orange shape=ellipse style=filled]
+	"Drop-off" -> "Drop-off":" Cannot afford"
+	"Demo Influence" [label="Demo Watched: 194 leads
+Conversion Rate: 59.3%" fillcolor=yellow shape=parallelogram style=filled]
+	Awareness -> "Demo Influence"
+}

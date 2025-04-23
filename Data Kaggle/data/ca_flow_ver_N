@@ -1,0 +1,40 @@
+digraph {
+	dpi=300 rankdir=LR size=16
+	Lead [label="Lead
+(358 leads)" fillcolor=deepskyblue shape=box style=filled]
+	Awareness [label="Awareness (Demo Video)
+(194 leads)
+Demo Attendance: 100.0%
+Avg Watch: 56.6%" fillcolor=deepskyblue shape=box style=filled]
+	Consideration [label="Consideration
+(115 leads)" fillcolor=deepskyblue shape=box style=filled]
+	Conversion [label="Conversion
+(64 leads)" fillcolor=deepskyblue shape=box style=filled]
+	Drop_Demo [label="Dropped (No Demo)
+(164 leads)
+- Wants offline classes (56 leads, 34.1%)
+- Can't afford (44 leads, 26.8%)
+- Student not interested in domain (28 leads, 17.1%)" fillcolor=orangered shape=box style=filled]
+	Drop_Consideration [label="Dropped (No Consideration)
+(79 leads)
+- Can't afford (32 leads, 40.5%)
+- Wants offline classes (25 leads, 31.6%)
+- Student not interested in domain (14 leads, 17.7%)" fillcolor=orangered shape=box style=filled]
+	Drop_Conversion [label="Dropped (No Conversion)
+(51 leads)
+- Can't afford (19 leads, 37.3%)
+- Student not interested in domain (10 leads, 19.6%)
+- Wants offline classes (10 leads, 19.6%)" fillcolor=orangered shape=box style=filled]
+	Interest1 [label="Lead’s Interest" shape=diamond]
+	Interest2 [label="Lead’s Interest" shape=diamond]
+	Interest3 [label="Lead’s Interest" shape=diamond]
+	Lead -> Interest1 [label="Introduction/Demo Call"]
+	Interest1 -> Drop_Demo [label="No (164 dropped)"]
+	Interest1 -> Awareness [label=Yes]
+	Awareness -> Interest2 [label="Post Demo Follow-up"]
+	Interest2 -> Drop_Consideration [label="No (79 dropped)"]
+	Interest2 -> Consideration [label=Yes]
+	Consideration -> Interest3 [label="Conversion Follow-up"]
+	Interest3 -> Drop_Conversion [label="No (51 dropped)"]
+	Interest3 -> Conversion [label="Yes - Payment Successful"]
+}

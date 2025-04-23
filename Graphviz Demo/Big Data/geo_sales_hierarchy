@@ -1,0 +1,83 @@
+graph Sales_Hierarchy {
+	bgcolor=white rankdir=TB
+	POLK [fillcolor="#e6f3ff" shape=folder]
+	2666 [label="Store: HY-VEE #2 / ANKENY" fillcolor="#d4f7d4" shape=box]
+	POLK -- 2666
+	"2666_product" [label="Top Product
+TITOS HANDMADE VODKA" fillcolor="#ffe6e6" shape=ellipse]
+	2666 -- "2666_product"
+	4230 [label="Store: FAREWAY STORES #106 / CLIVE" fillcolor="#d4f7d4" shape=box]
+	POLK -- 4230
+	"4230_product" [label="Top Product
+BLACK VELVET" fillcolor="#ffe6e6" shape=ellipse]
+	4230 -- "4230_product"
+	5128 [label="Store: PRICE CHOPPER  /  BEAVER" fillcolor="#d4f7d4" shape=box]
+	POLK -- 5128
+	"5128_product" [label="Top Product
+TITOS HANDMADE VODKA" fillcolor="#ffe6e6" shape=ellipse]
+	5128 -- "5128_product"
+	LINN [fillcolor="#e6f3ff" shape=folder]
+	5222 [label="Store: LEO1  /  CEDAR RAPIDS" fillcolor="#d4f7d4" shape=box]
+	LINN -- 5222
+	"5222_product" [label="Top Product
+REMY MARTIN VSOP" fillcolor="#ffe6e6" shape=ellipse]
+	5222 -- "5222_product"
+	2529 [label="Store: HY-VEE DRUGSTORE #4 / CEDAR RAPIDS" fillcolor="#d4f7d4" shape=box]
+	LINN -- 2529
+	"2529_product" [label="Top Product
+BLACK VELVET" fillcolor="#ffe6e6" shape=ellipse]
+	2529 -- "2529_product"
+	3666 [label="Store: TARGET STORE T-1771 / CEDAR RAPIDS" fillcolor="#d4f7d4" shape=box]
+	LINN -- 3666
+	"3666_product" [label="Top Product
+TITOS HANDMADE VODKA" fillcolor="#ffe6e6" shape=ellipse]
+	3666 -- "3666_product"
+	SCOTT [fillcolor="#e6f3ff" shape=folder]
+	3354 [label="Store: SAM'S CLUB 8238 / DAVENPORT" fillcolor="#d4f7d4" shape=box]
+	SCOTT -- 3354
+	"3354_product" [label="Top Product
+TITOS HANDMADE VODKA" fillcolor="#ffe6e6" shape=ellipse]
+	3354 -- "3354_product"
+	5666 [label="Store: COSTCO WHOLESALE #1325 / DAVENPORT" fillcolor="#d4f7d4" shape=box]
+	SCOTT -- 5666
+	"5666_product" [label="Top Product
+KIRKLAND SIGNATURE AMERICAN VODKA" fillcolor="#ffe6e6" shape=ellipse]
+	5666 -- "5666_product"
+	3776 [label="Store: WAL-MART 5115 / DAVENPORT" fillcolor="#d4f7d4" shape=box]
+	SCOTT -- 3776
+	"3776_product" [label="Top Product
+TITOS HANDMADE VODKA" fillcolor="#ffe6e6" shape=ellipse]
+	3776 -- "3776_product"
+	JOHNSON [fillcolor="#e6f3ff" shape=folder]
+	5460 [label="Store: SMOKIN JOE'S # 6 TOBACCO AND LIQUOR OUTLET" fillcolor="#d4f7d4" shape=box]
+	JOHNSON -- 5460
+	"5460_product" [label="Top Product
+HENNESSY VS" fillcolor="#ffe6e6" shape=ellipse]
+	5460 -- "5460_product"
+	5404 [label="Store: THE DEPOT OXFORD LLC" fillcolor="#d4f7d4" shape=box]
+	JOHNSON -- 5404
+	"5404_product" [label="Top Product
+TITOS HANDMADE VODKA" fillcolor="#ffe6e6" shape=ellipse]
+	5404 -- "5404_product"
+	3869 [label="Store: BOOTLEGGIN' BARZINI'S FIN" fillcolor="#d4f7d4" shape=box]
+	JOHNSON -- 3869
+	"3869_product" [label="Top Product
+TITOS HANDMADE VODKA" fillcolor="#ffe6e6" shape=ellipse]
+	3869 -- "3869_product"
+	"BLACK HAWK" [fillcolor="#e6f3ff" shape=folder]
+	3769 [label="Store: WAL-MART 0753 / CEDAR FALL" fillcolor="#d4f7d4" shape=box]
+	"BLACK HAWK" -- 3769
+	"3769_product" [label="Top Product
+BLACK VELVET" fillcolor="#ffe6e6" shape=ellipse]
+	3769 -- "3769_product"
+	2572 [label="Store: HY-VEE FOOD STORE / CEDAR FALLS" fillcolor="#d4f7d4" shape=box]
+	"BLACK HAWK" -- 2572
+	"2572_product" [label="Top Product
+TITOS HANDMADE VODKA" fillcolor="#ffe6e6" shape=ellipse]
+	2572 -- "2572_product"
+	3808 [label="Store: THRIFTWAY" fillcolor="#d4f7d4" shape=box]
+	"BLACK HAWK" -- 3808
+	"3808_product" [label="Top Product
+BLACK VELVET" fillcolor="#ffe6e6" shape=ellipse]
+	3808 -- "3808_product"
+}

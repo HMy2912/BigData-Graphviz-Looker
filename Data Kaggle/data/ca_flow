@@ -1,0 +1,34 @@
+digraph Customer_Acquisition {
+	rankdir=LR
+	node [fontname=Arial fontsize=12 shape=box style=filled]
+	Lead [label=Lead fillcolor=deepskyblue fontcolor=white]
+	Awareness [label="Awareness
+(Demo Video)" fillcolor=deepskyblue fontcolor=white]
+	Consideration [label=Consideration fillcolor=deepskyblue fontcolor=white]
+	Conversion [label=Conversion fillcolor=deepskyblue fontcolor=white]
+	Decision1 [label="Lead’s Interest?" fillcolor=white fontcolor=black shape=diamond]
+	Decision2 [label="Lead’s Interest?" fillcolor=white fontcolor=black shape=diamond]
+	Decision3 [label="Lead’s Interest?" fillcolor=white fontcolor=black shape=diamond]
+	Drop1 [label=Drop fillcolor=orangered fontcolor=white]
+	Drop2 [label=Drop fillcolor=orangered fontcolor=white]
+	Drop3 [label=Drop fillcolor=orangered fontcolor=white]
+	Lead -> Decision1 [label="Introduction/
+Demo Schedule Call"]
+	Decision1 -> Drop1 [label=No]
+	Decision1 -> Awareness [label=Yes]
+	Awareness -> Decision2 [label="Post Demo -
+Follow-up Call"]
+	Decision2 -> Drop2 [label=No]
+	Decision2 -> Consideration [label=Yes]
+	Consideration -> Decision3 [label="Call to Know
+Interest for Conversion"]
+	Decision3 -> Drop3 [label=No]
+	Decision3 -> Conversion [label="Yes - Payment/
+Successful Conversion"]
+	Awareness -> Lead [label="Did Not Attend
+Demo" style=dashed]
+	Consideration -> Awareness [label="Follow-up Call
+for Consideration" style=dashed]
+	Conversion -> Consideration [label="Follow-up Call for
+Conversion/Failed Payment" style=dashed]
+}

@@ -1,0 +1,31 @@
+digraph CustomerAcquisitionFlow {
+	rankdir=LR
+	Lead [label="Lead
+(0 Leads)" fillcolor=lightblue shape=box style=filled]
+	Awareness [label="Awareness
+(0 Leads)" fillcolor=lightblue shape=box style=filled]
+	Consideration [label="Consideration
+(0 Leads)" fillcolor=lightblue shape=box style=filled]
+	Conversion [label="Conversion
+(0 Leads)" fillcolor=lightblue shape=box style=filled]
+	"Drop-off" [label="Drop-off
+(326 Leads)" fillcolor=pink shape=diamond style=filled]
+	Lead -> Awareness [label="0 Successful" color=green]
+	Lead -> "Drop-off" [label="0 Failed" color=red]
+	Awareness -> Consideration [label="0 Successful" color=green]
+	Awareness -> "Drop-off" [label="0 Failed" color=red]
+	Consideration -> Conversion [label="0 Successful" color=green]
+	Consideration -> "Drop-off" [label="0 Failed" color=red]
+	"Drop: Wants offline classes" [fillcolor=lightgray shape=ellipse style=filled]
+	"Drop-off" -> Drop:" Wants offline classes" [label="56 Leads"]
+	"Drop: Can't afford" [fillcolor=lightgray shape=ellipse style=filled]
+	"Drop-off" -> Drop:" Can't afford" [label="44 Leads"]
+	"Drop: Student not interested i" [fillcolor=lightgray shape=ellipse style=filled]
+	"Drop-off" -> Drop:" Student not interested i" [label="28 Leads"]
+	"Drop: No time for student" [fillcolor=lightgray shape=ellipse style=filled]
+	"Drop-off" -> Drop:" No time for student" [label="27 Leads"]
+	"Drop: Will join in final year" [fillcolor=lightgray shape=ellipse style=filled]
+	"Drop-off" -> Drop:" Will join in final year" [label="5 Leads"]
+	"Drop: Cannot afford" [fillcolor=lightgray shape=ellipse style=filled]
+	"Drop-off" -> Drop:" Cannot afford" [label="4 Leads"]
+}

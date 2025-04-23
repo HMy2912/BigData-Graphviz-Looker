@@ -1,0 +1,200 @@
+digraph FilteredSalesHierarchy {
+	rankdir=TB
+	SNR501MG [fillcolor=purple fontcolor=white shape=box style=filled]
+	JNR1001MG [fillcolor=lightblue shape=box style=filled]
+	SNR501MG -> JNR1001MG
+	JNR1002MG [fillcolor=lightblue shape=box style=filled]
+	SNR501MG -> JNR1002MG
+	JNR1003MG [fillcolor=lightblue shape=box style=filled]
+	SNR501MG -> JNR1003MG
+	JNR1004MG [fillcolor=lightblue shape=box style=filled]
+	SNR501MG -> JNR1004MG
+	USR1001 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1001
+	USR1002 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1002
+	USR1003 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1003
+	USR1004 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1004
+	USR1005 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1005
+	USR1006 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1006
+	USR1007 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1007
+	USR1008 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1008
+	USR1009 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1009
+	USR1010 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1010
+	USR1011 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1011
+	USR1012 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1012
+	USR1013 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1013
+	USR1014 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1014
+	USR1015 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1015
+	USR1016 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1016
+	USR1017 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1017
+	USR1018 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1018
+	USR1019 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1019
+	USR1020 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1020
+	USR1321 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1321
+	USR1325 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1325
+	USR1326 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1326
+	USR1327 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1327
+	USR1351 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1351
+	USR1352 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1352
+	USR1353 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1353
+	USR1354 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1354
+	USR1355 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1355
+	USR1356 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1356
+	USR1357 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1357
+	USR1358 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1358
+	USR1359 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1359
+	USR1360 [fillcolor=pink shape=ellipse style=filled]
+	JNR1001MG -> USR1360
+	USR1021 [fillcolor=pink shape=ellipse style=filled]
+	JNR1002MG -> USR1021
+	USR1022 [fillcolor=pink shape=ellipse style=filled]
+	JNR1002MG -> USR1022
+	USR1023 [fillcolor=pink shape=ellipse style=filled]
+	JNR1002MG -> USR1023
+	USR1024 [fillcolor=pink shape=ellipse style=filled]
+	JNR1002MG -> USR1024
+	USR1025 [fillcolor=pink shape=ellipse style=filled]
+	JNR1002MG -> USR1025
+	USR1026 [fillcolor=pink shape=ellipse style=filled]
+	JNR1002MG -> USR1026
+	USR1027 [fillcolor=pink shape=ellipse style=filled]
+	JNR1002MG -> USR1027
+	USR1028 [fillcolor=pink shape=ellipse style=filled]
+	JNR1002MG -> USR1028
+	USR1029 [fillcolor=pink shape=ellipse style=filled]
+	JNR1002MG -> USR1029
+	USR1030 [fillcolor=pink shape=ellipse style=filled]
+	JNR1002MG -> USR1030
+	USR1031 [fillcolor=pink shape=ellipse style=filled]
+	JNR1002MG -> USR1031
+	USR1032 [fillcolor=pink shape=ellipse style=filled]
+	JNR1002MG -> USR1032
+	USR1033 [fillcolor=pink shape=ellipse style=filled]
+	JNR1002MG -> USR1033
+	USR1034 [fillcolor=pink shape=ellipse style=filled]
+	JNR1002MG -> USR1034
+	USR1035 [fillcolor=pink shape=ellipse style=filled]
+	JNR1002MG -> USR1035
+	USR1036 [fillcolor=pink shape=ellipse style=filled]
+	JNR1002MG -> USR1036
+	USR1037 [fillcolor=pink shape=ellipse style=filled]
+	JNR1002MG -> USR1037
+	USR1038 [fillcolor=pink shape=ellipse style=filled]
+	JNR1002MG -> USR1038
+	USR1039 [fillcolor=pink shape=ellipse style=filled]
+	JNR1002MG -> USR1039
+	USR1040 [fillcolor=pink shape=ellipse style=filled]
+	JNR1002MG -> USR1040
+	USR1041 [fillcolor=pink shape=ellipse style=filled]
+	JNR1003MG -> USR1041
+	USR1042 [fillcolor=pink shape=ellipse style=filled]
+	JNR1003MG -> USR1042
+	USR1043 [fillcolor=pink shape=ellipse style=filled]
+	JNR1003MG -> USR1043
+	USR1044 [fillcolor=pink shape=ellipse style=filled]
+	JNR1003MG -> USR1044
+	USR1045 [fillcolor=pink shape=ellipse style=filled]
+	JNR1003MG -> USR1045
+	USR1046 [fillcolor=pink shape=ellipse style=filled]
+	JNR1003MG -> USR1046
+	USR1047 [fillcolor=pink shape=ellipse style=filled]
+	JNR1003MG -> USR1047
+	USR1048 [fillcolor=pink shape=ellipse style=filled]
+	JNR1003MG -> USR1048
+	USR1049 [fillcolor=pink shape=ellipse style=filled]
+	JNR1003MG -> USR1049
+	USR1050 [fillcolor=pink shape=ellipse style=filled]
+	JNR1003MG -> USR1050
+	USR1051 [fillcolor=pink shape=ellipse style=filled]
+	JNR1003MG -> USR1051
+	USR1052 [fillcolor=pink shape=ellipse style=filled]
+	JNR1003MG -> USR1052
+	USR1053 [fillcolor=pink shape=ellipse style=filled]
+	JNR1003MG -> USR1053
+	USR1054 [fillcolor=pink shape=ellipse style=filled]
+	JNR1003MG -> USR1054
+	USR1055 [fillcolor=pink shape=ellipse style=filled]
+	JNR1003MG -> USR1055
+	USR1056 [fillcolor=pink shape=ellipse style=filled]
+	JNR1003MG -> USR1056
+	USR1057 [fillcolor=pink shape=ellipse style=filled]
+	JNR1003MG -> USR1057
+	USR1058 [fillcolor=pink shape=ellipse style=filled]
+	JNR1003MG -> USR1058
+	USR1059 [fillcolor=pink shape=ellipse style=filled]
+	JNR1003MG -> USR1059
+	USR1060 [fillcolor=pink shape=ellipse style=filled]
+	JNR1003MG -> USR1060
+	USR1061 [fillcolor=pink shape=ellipse style=filled]
+	JNR1004MG -> USR1061
+	USR1062 [fillcolor=pink shape=ellipse style=filled]
+	JNR1004MG -> USR1062
+	USR1063 [fillcolor=pink shape=ellipse style=filled]
+	JNR1004MG -> USR1063
+	USR1064 [fillcolor=pink shape=ellipse style=filled]
+	JNR1004MG -> USR1064
+	USR1065 [fillcolor=pink shape=ellipse style=filled]
+	JNR1004MG -> USR1065
+	USR1066 [fillcolor=pink shape=ellipse style=filled]
+	JNR1004MG -> USR1066
+	USR1067 [fillcolor=pink shape=ellipse style=filled]
+	JNR1004MG -> USR1067
+	USR1068 [fillcolor=pink shape=ellipse style=filled]
+	JNR1004MG -> USR1068
+	USR1069 [fillcolor=pink shape=ellipse style=filled]
+	JNR1004MG -> USR1069
+	USR1070 [fillcolor=pink shape=ellipse style=filled]
+	JNR1004MG -> USR1070
+	USR1071 [fillcolor=pink shape=ellipse style=filled]
+	JNR1004MG -> USR1071
+	USR1072 [fillcolor=pink shape=ellipse style=filled]
+	JNR1004MG -> USR1072
+	USR1073 [fillcolor=pink shape=ellipse style=filled]
+	JNR1004MG -> USR1073
+	USR1074 [fillcolor=pink shape=ellipse style=filled]
+	JNR1004MG -> USR1074
+	USR1075 [fillcolor=pink shape=ellipse style=filled]
+	JNR1004MG -> USR1075
+	USR1076 [fillcolor=pink shape=ellipse style=filled]
+	JNR1004MG -> USR1076
+	USR1077 [fillcolor=pink shape=ellipse style=filled]
+	JNR1004MG -> USR1077
+	USR1078 [fillcolor=pink shape=ellipse style=filled]
+	JNR1004MG -> USR1078
+	USR1079 [fillcolor=pink shape=ellipse style=filled]
+	JNR1004MG -> USR1079
+	USR1080 [fillcolor=pink shape=ellipse style=filled]
+	JNR1004MG -> USR1080
+}

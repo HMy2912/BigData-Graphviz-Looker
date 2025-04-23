@@ -1,0 +1,40 @@
+digraph Sales_Performance {
+	bgcolor=white rankdir=LR
+	Sales [label="Total Sales
+$4,608,450,130" fillcolor="#e6f3ff" shape=box]
+	Product [label="Top Product
+TITOS HANDMADE VODKA" fillcolor="#d4f7d4" shape=box]
+	County [label="Top County
+POLK" fillcolor="#d4f7d4" shape=box]
+	Trends [label="Monthly Trends" fillcolor="#ffe6e6" shape=ellipse]
+	Sales -> Product [label="Driven by"]
+	Sales -> County [label="Top Region"]
+	Sales -> Trends [label="Over Time"]
+	subgraph cluster_trends {
+		label="Monthly Sales" style=dashed
+		Month_1 [label="Month 1
+$335,149,645" shape=note]
+		Month_2 [label="Month 2
+$353,510,777" shape=note]
+		Month_3 [label="Month 3
+$379,711,983" shape=note]
+		Month_4 [label="Month 4
+$358,284,223" shape=note]
+		Month_5 [label="Month 5
+$385,723,601" shape=note]
+		Month_6 [label="Month 6
+$398,005,708" shape=note]
+		Month_7 [label="Month 7
+$368,691,749" shape=note]
+		Month_8 [label="Month 8
+$385,338,660" shape=note]
+		Month_9 [label="Month 9
+$365,276,810" shape=note]
+		Month_10 [label="Month 10
+$442,676,788" shape=note]
+		Month_11 [label="Month 11
+$380,612,039" shape=note]
+		Month_12 [label="Month 12
+$455,468,148" shape=note]
+	}
+}
